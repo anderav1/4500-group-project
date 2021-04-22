@@ -98,4 +98,9 @@ public class MenuController : MonoBehaviourPunCallbacks
         Debug.Log("MENU OnJoinedRoom() called by PUN. Now this client is in a room.");
         PhotonNetwork.LoadLevel("Game");
     }
+
+    public void GoToRegister()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
