@@ -5,6 +5,7 @@ using Photon.Pun;
 using System;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class MenuController : MonoBehaviourPunCallbacks
@@ -19,10 +20,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     [SerializeField]
     private GameObject controlPanel;
 
-    [Tooltip("The UI Label to inform the user that the connection is in progress")]
-    [SerializeField]
-    private GameObject progressLabel;
-
+    public Text playerDisplay;
 
 
     void Awake()
@@ -35,8 +33,12 @@ public class MenuController : MonoBehaviourPunCallbacks
     void Start()
     {
         print("MENU LOADED");
-        progressLabel.SetActive(false);
         controlPanel.SetActive(true);
+
+        if (DBManager.LoggedIn)
+        {
+            playerDisplay.text = "Logged in as: " + DBManager.username;
+        }
     }
 
     // Update is called once per frame
@@ -59,7 +61,6 @@ public class MenuController : MonoBehaviourPunCallbacks
     void Connect()
     {
         print("MENU CONNECTED");
-        progressLabel.SetActive(true);
         controlPanel.SetActive(false);
         if(PhotonNetwork.IsConnected)
         {
@@ -81,7 +82,6 @@ public class MenuController : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        progressLabel.SetActive(false);
         controlPanel.SetActive(true);
         Debug.LogWarningFormat("MENU OnDisconnected() was called by PUN with reason {0}", cause);
     }
@@ -102,5 +102,10 @@ public class MenuController : MonoBehaviourPunCallbacks
     public void GoToRegister()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void GoToLogin()
+    {
+        SceneManager.LoadScene(2);
     }
 }
