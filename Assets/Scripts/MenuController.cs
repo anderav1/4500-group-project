@@ -21,6 +21,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     private GameObject controlPanel;
 
     public Text playerDisplay;
+    public Text errorText;
 
 
     void Awake()
@@ -58,7 +59,7 @@ public class MenuController : MonoBehaviourPunCallbacks
         }
         else
         {
-            playerDisplay.text = "You must log in to play";
+            errorText.gameObject.SetActive(true);
         }
     }
     

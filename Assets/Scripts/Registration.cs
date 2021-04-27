@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using testDB;
 using System.Data;
 using Mono.Data.Sqlite;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Registration : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class Registration : MonoBehaviour
 
     public void RegisterUser()
     {
-        dbPath = "URI=file:" + Application.persistentDataPath + "/game_db.db";
+        dbPath = "URI=file:" + Application.persistentDataPath + "/game_db.db"; // C:\Users\<COMPUTER NAME>\AppData\LocalLow\DefaultCompany\CS 4500 Wall Socket Game
 
         using (var conn = new SqliteConnection(dbPath))
         {
@@ -65,6 +65,7 @@ public class Registration : MonoBehaviour
                     var result = cmd.ExecuteNonQuery();
                     Debug.Log("Users added: " + result);
                     errorText.gameObject.SetActive(false);
+                    SceneManager.LoadScene(0);
                 }
                 else
                 {
