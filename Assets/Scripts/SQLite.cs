@@ -12,7 +12,7 @@ namespace testDB
 
 		private void Start()
 		{
-			dbPath = "URI=file:" + Application.persistentDataPath + "/game_db.db";
+			dbPath = "URI=file:" + Application.persistentDataPath + "/game_db.db"; // C:\Users\<COMPUTER NAME>\AppData\LocalLow\DefaultCompany\CS 4500 Wall Socket Game
 			CreateSchema();
 		}
 

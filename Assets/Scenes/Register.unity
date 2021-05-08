@@ -810,7 +810,6 @@ GameObject:
   - component: {fileID: 450081115}
   - component: {fileID: 450081114}
   - component: {fileID: 450081118}
-  - component: {fileID: 450081119}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -921,18 +920,6 @@ MonoBehaviour:
   submitButton: {fileID: 1632948189}
   returnButton: {fileID: 1278306264}
   errorText: {fileID: 2112954321}
---- !u!114 &450081119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450081113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dcee688da22abc439c86121ea11dfb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &531288122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +990,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 
 --- !u!222 &531288125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1211,8 +1198,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 854336151}
   m_TextComponent: {fileID: 308279094}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -1471,7 +1458,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 
 --- !u!222 &1219411918
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -117,4 +117,12 @@ public class MenuController : MonoBehaviourPunCallbacks
     {
         SceneManager.LoadScene(2);
     }
+
+    public void LogOutButton()
+    {
+        DBManager.LogOut();
+
+        playerDisplay.text = "Not logged in";
+
+    }
 }
