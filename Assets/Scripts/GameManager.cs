@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -17,9 +18,9 @@ public class GameManager : MonoBehaviourPunCallbacks
     [SerializeField]
     private Text winText;
 
-    [Tooltip("Plug Model")]
-    [SerializeField]
-    private GameObject plugModel;
+    public GameObject[] puzzlePieces;
+    
+    private GameObject moveablePiece;
 
     [Tooltip("Timer Text")]
     [SerializeField]
@@ -38,9 +39,16 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        var rand = new System.Random();
+        // Randomly choose puzzle piece to be displaced
+        moveablePiece = puzzlePieces[rand.Next(puzzlePieces.Length)].gameObject;
+        moveablePiece.gameObject.GetComponent<MovePuzzlePiece>().pieceLocked = false; // unlock dynamic piece
+
+        // move dynamic piece to starting position
+        float z = moveablePiece.transform.position.z;
+        moveablePiece.transform.position = new Vector3(-50f, 0f, z);
+
         Instance = this;
-        plugModel.transform.position = new Vector3(Random.Range(-39, 70), Random.Range(-43, 17), Random.Range(-40, -8)); // Initialize the plug in random location at start
-        plugModel.transform.Rotate(0, 0, Random.Range(0, 360));
 
         //The timer used in the game uses a script that is part of Photon. From the project root directory, the path to the script is Assets/Photon/PhotonUnityNetworking/UtilityScripts/Room/CountdownTimer.cs
         Photon.Pun.UtilityScripts.CountdownTimer timer = timerText.GetComponent<Photon.Pun.UtilityScripts.CountdownTimer>();
@@ -92,6 +100,12 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
+    public void WinGame()
+    {
+        Instance.didWin = true;
+        Instance.EndGame();
+    }
+
     public void LeaveRoom()
     {
         PhotonNetwork.Disconnect();
@@ -99,7 +113,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     void SetPlugPlayer()
     {
-        plugModel.GetComponent<ObserverController>().enabled = false; //Disables the observer controls for the plug player.
+        gameObject.GetComponent<ObserverController>().enabled = false; //Disables the observer controls for the plug player.
         
         Photon.Pun.UtilityScripts.CountdownTimer.OnCountdownTimerHasExpired += OnCountdownTimerHasExpired; //Anytime this line of code appears, it is assigning the function OnCountdownTimerHasExpired to be called when the timer ends.
     }
@@ -107,7 +121,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     //Function that sets up the observer's UI and control scripts.
     void SetObserver()
     {
-        plugModel.GetComponent<PlugPlayerController>().enabled = false; //Disables the plug player controls for the observer.
+        gameObject.GetComponent<MovePuzzlePiece>().enabled = false; //Disables the plug player controls for the observer.
 
         Photon.Pun.UtilityScripts.CountdownTimer.OnCountdownTimerHasExpired += OnCountdownTimerHasExpired;
         Photon.Pun.UtilityScripts.CountdownTimer.SetStartTime(); //This starts the countdown timer.
@@ -122,17 +136,17 @@ public class GameManager : MonoBehaviourPunCallbacks
             Photon.Pun.UtilityScripts.CountdownTimer.OnCountdownTimerHasExpired -= OnCountdownTimerHasExpired; //Makes it so that nothing happens when the countdown timer ends.
             timerText.GetComponent<Photon.Pun.UtilityScripts.CountdownTimer>().enabled = false; //Makes the timer stop, at least on the UI.
         }
-        else if(!didWin) {
+        else {
             loseText.enabled = true; //Displays the lose text.
         }
 
         //Disables the script and buttons for the plug player when the game ends.
-        plugModel.GetComponent<PlugPlayerController>().disableButtons();
-        plugModel.GetComponent<PlugPlayerController>().enabled = false;
+        //plugModel.GetComponent<PlugPlayerController>().disableButtons();
+        moveablePiece.gameObject.GetComponent<MovePuzzlePiece>().enabled = false;
 
         //Disables the script and buttons for the observer when the game ends.
-        plugModel.GetComponent<ObserverController>().disableButtons();
-        plugModel.GetComponent<ObserverController>().enabled = false;
+        //plugModel.GetComponent<ObserverController>().disableButtons();
+        gameObject.GetComponent<ObserverController>().enabled = false;
 
         restartButton.gameObject.SetActive(true); //Displays the restart button.
     }
@@ -155,8 +169,8 @@ public class GameManager : MonoBehaviourPunCallbacks
         restartButton.gameObject.SetActive(false);
 
         //The observer script and buttons need to be explicity re-enable by the observer because the Plug Player (who is the MasterClient) reloads the scene, and gets its scripts re-enabled that way.
-        plugModel.GetComponent<ObserverController>().enabled = true;
-        plugModel.GetComponent<ObserverController>().enableButtons();
+        gameObject.GetComponent<ObserverController>().enabled = true;
+        gameObject.GetComponent<ObserverController>().enableButtons();
 
         timerText.GetComponent<Photon.Pun.UtilityScripts.CountdownTimer>().enabled = true; //Re-enables the timer.
         Photon.Pun.UtilityScripts.CountdownTimer.OnCountdownTimerHasExpired += OnCountdownTimerHasExpired; //Re-enables the function that executes when the timer runs out.
