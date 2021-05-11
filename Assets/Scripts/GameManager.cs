@@ -116,6 +116,15 @@ public class GameManager : MonoBehaviourPunCallbacks
         gameObject.GetComponent<ObserverController>().enabled = false; //Disables the observer controls for the plug player.
         
         Photon.Pun.UtilityScripts.CountdownTimer.OnCountdownTimerHasExpired += OnCountdownTimerHasExpired; //Anytime this line of code appears, it is assigning the function OnCountdownTimerHasExpired to be called when the timer ends.
+
+        // make puzzle board invisible to controller player
+        foreach (var piece in puzzlePieces)
+        {
+            if (piece != moveablePiece)
+            {
+                piece.gameObject.GetComponent<Renderer>().enabled = false;
+            }
+        }
     }
 
     //Function that sets up the observer's UI and control scripts.
