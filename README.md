@@ -1,24 +1,19 @@
-# Invisible Plug Game
+# Jigsaw Puzzle Game
 
 ## Overview
 
-Invisible Plug Game is a game built using Unity. Photon is also used for online multiplayer. The game can only be played over the Internet. 
+This game is built using Unity and based on the [Invisible Plug game](https://github.com/aghwvv/4500-group-project/releases/tag/v0.9.1). Photon is also used for online multiplayer. The game can only be played over the Internet. 
 
 
 #### Gameplay Instructions
 
-- The first player to click the "Play" button on the start screen is given the role of plug player. The plug player is able to move the plug around, but cannot see where it is.
-- The second player to click the "Play" button on the start screen is given the role of observer. The observer can see the plug from multiple camera angles, but cannot control its movements.
-- The goal of the game is for the observer to instruct the plug player on how they should move the plug in order to get it plugged into an outlet before the timer runs out.
+- The first player to click the "Play" button on the start screen is given the controller role. The controller can move the dynamic puzzle piece using the directional buttons, but they cannot see the rest of the puzzle board.
+- The second player to click the "Play" button on the start screen is given the observer role. The observer can see the dynamic puzzle piece as well as the rest of the puzzle board from multiple camera angles, but they cannot control the movements of the dynamic puzzle piece.
+- The goal of the game is for the observer to direct the controller to move the dynamic puzzle piece to the empty space in the puzzle board and complete the puzzle before the timer runs out.
 
 
 ## Installation Instructions
 
-1. Go to the latest release: https://github.com/aghwvv/4500-group-project/releases/tag/v0.9.1
+1. Go to the latest release: https://github.com/anderav1/4500-group-project/releases/tag/v1.0.0
 2. Download the zip file under Assets
 3. Extract the files, and run "CS 4500 Wall Socket Game.exe"
-
-
-## Acknowledgements
-- 3D Outlet Model: https://www.turbosquid.com/3d-models/maya-wall-socket/836657
-- 3D Plug Model: Provided by Melvin N. Greene

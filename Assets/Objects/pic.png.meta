@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: 9774d626b6820484690b77bbb526557e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5635580696872852197
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_0
+  - first:
+      213: -8098681110410416048
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_1
+  - first:
+      213: 2802509032490895718
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_2
+  - first:
+      213: -4039772807812659043
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_3
+  - first:
+      213: -7531445696812696746
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_4
+  - first:
+      213: -5712689648630635396
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_5
+  - first:
+      213: 6090250770549121200
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_6
+  - first:
+      213: -2089096121296540018
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_7
+  - first:
+      213: -6783465813030141176
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_8
+  - first:
+      213: 2016294210963487929
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_9
+  - first:
+      213: -5629643578817879352
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_10
+  - first:
+      213: 4642949359224731753
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_11
+  - first:
+      213: -9049157204961943118
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_12
+  - first:
+      213: -1198425579292725518
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_13
+  - first:
+      213: -3425880621797258940
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_14
+  - first:
+      213: -1896032714459895794
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_15
+  - first:
+      213: 6891692565397727350
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_16
+  - first:
+      213: -4682659394772093890
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_17
+  - first:
+      213: -3420217207460172181
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_18
+  - first:
+      213: -7750840590689079331
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_19
+  - first:
+      213: 4769489581529324365
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_20
+  - first:
+      213: -2380006294773744281
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_21
+  - first:
+      213: 8213240209311648568
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_22
+  - first:
+      213: 3361521421728158213
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_23
+  - first:
+      213: -1571148034782713694
+    second: painel-castelo-g-frete-gratis-tema-de-festa-infantil_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1568dbf6356ac1b0800000000000000
+      internalID: -5635580696872852197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 472.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05032d05074bb9f80800000000000000
+      internalID: -8098681110410416048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_2
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 472.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6698171ed1384e620800000000000000
+      internalID: 2802509032490895718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 472.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d984b01f808dfe7c0800000000000000
+      internalID: -4039772807812659043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_4
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 472.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bb554ca0eea7790800000000000000
+      internalID: -7531445696812696746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 354.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74e15d180378b0b0800000000000000
+      internalID: -5712689648630635396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 354.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b021abeecae48450800000000000000
+      internalID: 6090250770549121200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 354.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e297c652a0203e0800000000000000
+      internalID: -2089096121296540018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_8
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 354.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803055c88c94cd1a0800000000000000
+      internalID: -6783465813030141176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_9
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 354.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcb72fe6e05bfb10800000000000000
+      internalID: 2016294210963487929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c260800efc7fd1b0800000000000000
+      internalID: -5629643578817879352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_11
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 236.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968b7b2c7d11f6040800000000000000
+      internalID: 4642949359224731753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 236.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1a391777fea6280800000000000000
+      internalID: -9049157204961943118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_13
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 236.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fee38009465e5fe0800000000000000
+      internalID: -1198425579292725518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_14
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 236.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44941eeb9b3d470d0800000000000000
+      internalID: -3425880621797258940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e082914ba40ffa5e0800000000000000
+      internalID: -1896032714459895794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 118.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6786bbddfd534af50800000000000000
+      internalID: 6891692565397727350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 118.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b67a171ad30fb0800000000000000
+      internalID: -4682659394772093890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_18
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 118.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e68a62292f880d0800000000000000
+      internalID: -3420217207460172181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_19
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 118.8
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf6c496c8b7f6490800000000000000
+      internalID: -7750840590689079331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.80000305
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b5bfa2181a03240800000000000000
+      internalID: 4769489581529324365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_21
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0.80000305
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d31dc72e488fed0800000000000000
+      internalID: -2380006294773744281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_22
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0.80000305
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bc9fa647a4bf170800000000000000
+      internalID: 8213240209311648568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_23
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 0.80000305
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50219f64ce586ae20800000000000000
+      internalID: 3361521421728158213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: painel-castelo-g-frete-gratis-tema-de-festa-infantil_24
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 0.80000305
+        width: 197
+        height: 118.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a82939cf29223ae0800000000000000
+      internalID: -1571148034782713694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ffe78e9b8218a8748881a188dc659bca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
