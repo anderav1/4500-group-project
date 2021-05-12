@@ -14,6 +14,6 @@ This game is built using Unity and based on the [Invisible Plug game](https://gi
 
 ## Installation Instructions
 
-1. Go to the latest release: https://github.com/anderav1/4500-group-project/releases/tag/v1.0.0
+1. Go to the latest release: https://github.com/anderav1/4500-group-project/releases/tag/v1.0.1
 2. Download the zip file under Assets
-3. Extract the files, and run "CS 4500 Wall Socket Game.exe"
+3. Extract the files, and run "Jigsaw Puzzle Game.exe"
