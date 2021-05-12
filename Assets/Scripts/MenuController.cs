@@ -5,6 +5,7 @@ using Photon.Pun;
 using System;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class MenuController : MonoBehaviourPunCallbacks
@@ -19,10 +20,8 @@ public class MenuController : MonoBehaviourPunCallbacks
     [SerializeField]
     private GameObject controlPanel;
 
-    [Tooltip("The UI Label to inform the user that the connection is in progress")]
-    [SerializeField]
-    private GameObject progressLabel;
-
+    public Text playerDisplay;
+    public Text errorText;
 
 
     void Awake()
@@ -35,8 +34,12 @@ public class MenuController : MonoBehaviourPunCallbacks
     void Start()
     {
         print("MENU LOADED");
-        progressLabel.SetActive(false);
         controlPanel.SetActive(true);
+
+        if (DBManager.LoggedIn)
+        {
+            playerDisplay.text = "Logged in as: " + DBManager.username;
+        }
     }
 
     // Update is called once per frame
@@ -49,7 +52,15 @@ public class MenuController : MonoBehaviourPunCallbacks
     public void onStartButtonPress()
     {
         GameManager.inEditor = false; //Sets inEditor to false, because when we are starting the game at the start screen, we are either running a full build of the game outside of the editor, or we are wanting to test the game in actual multiplayer.
-        Connect();
+        
+        if (DBManager.LoggedIn)
+        {
+            Connect();
+        }
+        else
+        {
+            errorText.gameObject.SetActive(true);
+        }
     }
     
     public void onHelpButtonPress() {
@@ -59,7 +70,6 @@ public class MenuController : MonoBehaviourPunCallbacks
     void Connect()
     {
         print("MENU CONNECTED");
-        progressLabel.SetActive(true);
         controlPanel.SetActive(false);
         if(PhotonNetwork.IsConnected)
         {
@@ -81,7 +91,6 @@ public class MenuController : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        progressLabel.SetActive(false);
         controlPanel.SetActive(true);
         Debug.LogWarningFormat("MENU OnDisconnected() was called by PUN with reason {0}", cause);
     }
@@ -97,5 +106,23 @@ public class MenuController : MonoBehaviourPunCallbacks
     {
         Debug.Log("MENU OnJoinedRoom() called by PUN. Now this client is in a room.");
         PhotonNetwork.LoadLevel("Game");
+    }
+
+    public void GoToRegister()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void GoToLogin()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void LogOutButton()
+    {
+        DBManager.LogOut();
+
+        playerDisplay.text = "Not logged in";
+
     }
 }
